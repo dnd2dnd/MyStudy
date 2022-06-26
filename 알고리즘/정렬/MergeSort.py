@@ -9,7 +9,6 @@ def merge_sort(list):
     rightList = list[mid:]
     print(leftList,rightList)
     leftList = merge_sort(leftList)
-    
     rightList = merge_sort(rightList)
     
     return merge(leftList, rightList)
