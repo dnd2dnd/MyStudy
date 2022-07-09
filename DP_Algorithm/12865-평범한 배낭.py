@@ -13,10 +13,9 @@ for i in range(1, n+1):
             dp[i][j] = dp[i - 1][j] #weight보다 작으면 위의 값을 그대로 가져온다
         else:
             dp[i][j] = max(value + dp[i - 1][j - weight], dp[i - 1][j])
-    for i in range(n+1):
-        for j in range(k+1):
-            print(dp[i][j] , end=' ')
-        print()
-    print()
-
+    # for i in range(n+1):
+    #     for j in range(k+1):
+    #         print(dp[i][j] , end=' ')
+    #     print()
+    # print
 print(dp[n][k])    
