@@ -7,7 +7,8 @@
 - [Annotation](https://github.com/tkfdkskarl56/MyStudy/blob/main/SpringBoot/Annotation.md)
 - [Dependency Injection](https://github.com/tkfdkskarl56/MyStudy/blob/main/SpringBoot/Dependency%20Injection.md)
 - [REST](https://github.com/tkfdkskarl56/MyStudy/blob/main/SpringBoot/REST.md)
-
+- [Cors](https://github.com/tkfdkskarl56/MyStudy/blob/main/SpringBoot/Cors.md)
+- [@PreAuthorize, @PostAuthorize](https://github.com/tkfdkskarl56/MyStudy/blob/main/SpringBoot/%40PreAuthorize%2C%20%40PostAuthorize.md)
 ## 알고리즘 문제 풀이
 
 - [Baekjoon](https://github.com/tkfdkskarl56/MyStudy/tree/main/%EB%B0%B1%EC%A4%80)
@@ -20,7 +21,7 @@
 - [Stream](https://github.com/tkfdkskarl56/MyStudy/blob/main/Java/Stream.md)
 
 ## Python
-- [pass, continue, break]()
+- [pass, continue, break](https://github.com/tkfdkskarl56/MyStudy/blob/main/Python/pass%2C%20continue%2C%20break.md)
 ## 규칙
 
 Commit Message
