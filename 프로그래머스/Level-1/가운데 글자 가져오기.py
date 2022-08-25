@@ -6,4 +6,4 @@ def solution(s):
         return s[k-1:k+1]
     else:
         return s[k]
-    return answer
+    return answer 
