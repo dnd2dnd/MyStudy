@@ -77,4 +77,4 @@ $ git reset --hard HEAD^
 $ git pull origin main // 원격 저장소 main 가져오기
 $ git clone (url)      // 원격 저장소 가져오기
 $ git merge (브랜치명) // 브랜치를 병합
-```
+``` 
