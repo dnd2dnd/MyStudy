@@ -117,7 +117,7 @@ Stream<Integer> stream = productList.stream()
                             .map(Product::getAmount);                            
 ```
 
-#### flatMap
+### flatMap
 <br>
 
 `map` 에서 더 복잡한 `flatMap` 메소드 입니다.
