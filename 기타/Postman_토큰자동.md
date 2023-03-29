@@ -36,5 +36,17 @@ var data = JSON.parse(responseBody);
 pm.environment.set("token", data.{토큰변수명})
 ```
 
+<br>
+
+### 콘솔 확인
+
+코드에 console.log를 사용해 값을 콘솔에 적도록 하였는데
+
+Postman 하단에 있는 Console 버튼을 눌러 콘솔 창을 확인할 수 있습니다.
+
+![](https://user-images.githubusercontent.com/68494227/228394910-f42b257a-2598-43d2-8b73-85737f2e246d.png)
+
+
+
 
 
