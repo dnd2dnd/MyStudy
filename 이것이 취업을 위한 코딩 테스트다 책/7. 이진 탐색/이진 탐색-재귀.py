@@ -4,6 +4,7 @@
 # 4
 
 # 이진 탐색 - 배열 내부의 데이터가 이미 정렬되어 있어야함
+# 재귀
 def binary_seach(array, target, start, end):
     if start > end:
         return None
@@ -24,3 +25,17 @@ if result == None:
     print("원소가 존재하지 않습니다.")
 else:
     print(result + 1)
+
+# 이진탐색 반복문
+#
+
+def binary_search_for(array, target, start, end):
+    while start <= end:
+        mid = (start + end) // 2
+        if array[mid] == target:
+            return mid
+        elif array[mid] > target:
+            end = mid -1
+        else:
+            start = mid +1
+    return None

@@ -1,3 +1,8 @@
+## 입력값
+# 5 Dongbin
+# Hanul Jonggu Dongbin Taeil Sangwook
+# 3
+
 def sequential_search(n, target, array):
     for i in range(n):
         if array[i] == target:
