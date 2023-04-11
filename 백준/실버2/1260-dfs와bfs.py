@@ -7,6 +7,8 @@ for i in range(m):
 for i in range(n+1):
     graph[i].sort()
 
+print(graph)
+
 def dfs(graph, start_node, visited=[]):
     dfs_str=''
     visited.append(start_node)
@@ -17,6 +19,7 @@ def dfs(graph, start_node, visited=[]):
     for i in visited:
         dfs_str+=str(i)+' '
     return dfs_str
+
 def bfs(graph, start_node):
     bfs_str=''    
     need_visited, visited = list(), list()
