@@ -39,3 +39,45 @@ def bfs(graph, start_node):
 
 print(dfs(graph, v))
 print(bfs(graph, v))
+
+
+from collections import deque
+
+n, m, v = map(int, input().split())
+
+graph = [[] for _ in range(n+1)]
+
+for i in range(m):
+    a, b = map(int, input().split())
+    graph[a].append(b)
+    graph[b].append(a)
+
+
+def dfs(graph, x, visited=[]):
+    pr = ''
+    visited.append(x)
+    for node in graph[x]:
+        if node not in visited:
+            dfs(graph, node, visited)
+    
+    
+    for i in visited:
+        print(x, i)
+        pr+=str(i)+' '
+    return pr
+
+def bfs(graph, x):
+    queue = deque([x])
+    visited = [x]
+
+    while queue:
+        now = queue.popleft()
+        for node in graph[now]:
+            if node not in visited:
+                visited.append(node)    
+
+    for i in visited:
+        print(i, end=' ')
+
+print(dfs(graph, v))
+# bfs(graph, v)

@@ -9,17 +9,16 @@ for i in range(m):
 
 distance = [-1] * (n+1)
 distance[x] = 0
-val=[]
 
-def sol(graph, s):
-    queue = deque([s])
+queue = deque([x])
 
-    while queue:
-        now = queue.popleft()
-        for node in graph[now]:
-            if distance[node] == -1:
-                distance[node] = distance[now] + 1
-                queue.append(node)
+while queue:
+    now = queue.popleft()
+    for node in li[now]:
+        if distance[node] == -1:
+            distance[node] = distance[now] + 1
+            queue.append(node)
+
 
 check = False
 for i in range(1, n+1):
