@@ -28,7 +28,6 @@ def dfs(x, y, d):
         xx = x+dx[(d+2)%4]
         yy = y+dy[(d+2)%4]
         if xx>=0 and yy>=0 and xx<n and yy<m:
-            print(board[xx][yy], xx, yy)
             if board[xx][yy]!=1:
                 dfs(xx, yy, d)    
             else:
