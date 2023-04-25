@@ -4,15 +4,15 @@ li = list(map(int, input().split()))
 order = li.pop(0)
 
 def sol(n, k):
-    if len(answer) == N - 1:
+    if len(answer) == N-1:
         answer.append(numbers[-1])
         return
+    
+    mf = math.factorial(n-1)
+    value = math.ceil(k/mf)
+    answer.append(numbers.pop(value))
 
-    numberOfCases = math.factorial(n) // n
-    sequence = math.ceil(k / numberOfCases)
-    answer.append(numbers.pop(sequence))
-
-    sol(n-1, k-(numberOfCases*(sequence-1)))
+    sol(n-1, k - (mf*(value-1)))
     
 def sol_2():
     global answer
@@ -25,7 +25,7 @@ def sol_2():
 
 
 if order == 1:
-    numbers = [x for x in range(1, N+1)]
+    numbers = [x for x in range(N+1)]
     answer = []
     sol(N, li[0])
     print(' '.join(list(map(str, answer))))
