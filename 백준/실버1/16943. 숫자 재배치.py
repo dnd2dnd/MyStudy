@@ -1,20 +1,18 @@
-A, B = list(input().split())
+from itertools import permutations
 
-ctn = [0]*len(A)
-A = list(A)
-B = list(B)
-A.sort()
+a, b = input().split()
+b = int(b)
+c = -1
 
-for i in range(len(B)):
-    if B[i] in A:
-        ctn[i]=int(B[i])
-        A.remove(B[i])
+a_list = []
+for item in permutations(a):
+    a_list.append(''.join(item))
 
-for i in ctn:
-    if i!=0:
-        ctn[i] = A.pop()
+for i in a_list:
+    if i[0] == '0':  # 0으로 시작하는 경우
+        continue
+    i = int(i)
+    if i < b:
+        c = max(c, i)
 
-print(ctn)
-        
-
-
+print(c)
