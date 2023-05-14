@@ -1,6 +1,8 @@
 # UnrecognizedPropertyException 에러 
 해당 에러는 JSON 데이터에는 특정 property가 존재하나, 객체에는 해당 field가 존재하지 않아서 데이터를 mapping 하지 못하여 발생하는 현상
 
+https://www.notion.so/6d0e29fe05fb463e81bc5a4bbd789981?pvs=4#0bfc99c852b24a39823e51c99f7cb3a4
+
 ## 해결방안
 
 ### 객체 단위에서 해결
