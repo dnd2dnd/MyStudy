@@ -72,7 +72,7 @@ setApplicationDestinationPrefixes를 사용하여 클라이언트의 메시지 �
 
 ## 결과
 ### 1. /sub/monitor/1 구독
-![](../image/stomp_1.png)
+![stomp_1](https://github.com/tkfdkskarl56/MyStudy/assets/68494227/1cd5d53b-3b89-45b8-8447-f3fdb65b988d)
 
 - ws://localhost:8080/ws : 웹소켓 엔드포인트
 - Subscription URL : /sub/monitor/1, 구독 URL
@@ -80,7 +80,7 @@ setApplicationDestinationPrefixes를 사용하여 클라이언트의 메시지 �
 <br>
 
 ### 2. Pub Message
-![](../image/stomp_2.png)
+![stomp_2](https://github.com/tkfdkskarl56/MyStudy/assets/68494227/3ffc0a8c-4028-44c5-97e5-2edee0ca3056)
 - Destination Queue : /pub/sendMessage
 - JSON에 보낼 Message 클래스 값 정의
 
@@ -88,9 +88,7 @@ setApplicationDestinationPrefixes를 사용하여 클라이언트의 메시지 �
 <br>
 
 ### 3. Message
-
-![](../image/stomp_3.png)
-
+![stomp_3](https://github.com/tkfdkskarl56/MyStudy/assets/68494227/bd61ecd1-048d-47d9-ad23-8713d3c2a0d3)
 
 메세지가 성공적으로 받아온 것을 확인할 수 있다.
 
